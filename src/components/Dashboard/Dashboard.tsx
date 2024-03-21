@@ -52,7 +52,7 @@ export default function Dashboard() {
         </div>
       </section>
       <section className="flex flex-row gap-x-3">
-        <aside className=" relative bg-sideblue1 h-[calc(100vh-4rem)]  rounded-tr-[20px] py-[4rem] w-1/6 md:1/5">
+        <aside className=" relative bg-sideblue1 h-[calc(100vh-4rem)]  rounded-tr-[20px] py-[4rem] w-1/6 md:w-1/5">
         
           {menus.map(menu=><Menu title={menu.title} image={menu.image} link={menu.link}/>)}
 
