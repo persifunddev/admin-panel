@@ -1,4 +1,3 @@
-import React from "react";
 
 import {Outlet} from "react-router-dom"
 
@@ -54,37 +53,7 @@ export default function Dashboard() {
       </section>
       <section className="flex flex-row gap-x-3">
         <aside className=" relative bg-sideblue1 h-[calc(100vh-4rem)]  rounded-tr-[20px] py-[4rem] w-1/6 md:1/5">
-          {/* <NavLink to="/" className={({isActive})=>isActive ? "text-white border-l-4 border-indigo-500 border-[#FF7A42] flex items-center m-r-3 h-[50px] mt-5 cursor-pointer w-[300px] bg-sideblue2" : "text-white  flex items-center m-r-3 h-[50px] mt-5 cursor-pointer border-l-4 border-indigo-500 border-sideblue1 w-[300px] "}>
-            <span className="inline-block px-4">
-              <img className="inline-block w-[25px]" src={Home}></img>
-            </span>
-            <span className="text-menu font-menu ">Dashboard</span>
-          </NavLink>
-          <NavLink to="analytic" className={({isActive})=>isActive ? "text-white border-l-4 border-indigo-500 border-[#FF7A42] flex items-center m-r-3 h-[35px] mt-5 cursor-pointer" : "text-white  flex items-center m-r-3 h-[35px] mt-5 cursor-pointer border-l-4 border-indigo-500"}>
-            <span className="inline-block px-4">
-              <img className="inline-block w-[25px]" src={Home}></img>
-            </span>
-            <span className="text-menu font-menu ">Analytic</span>
-          </NavLink>
-          <NavLink to="orders" className={({isActive})=>isActive ? "text-white border-l-4 border-indigo-500 border-[#FF7A42] flex items-center m-r-3 h-[35px] mt-5 cursor-pointer" : "text-white  flex items-center m-r-3 h-[35px] mt-5 cursor-pointer border-l-4 border-indigo-500"}>
-            <span className="inline-block px-4">
-              <img className="inline-block w-[25px]" src={Home}></img>
-            </span>
-            <span className="text-menu font-menu ">Orders</span>
-          </NavLink>
-          <NavLink to="customers" className={({isActive})=>isActive ? "text-white border-l-4 border-indigo-500 border-[#FF7A42] flex items-center m-r-3 h-[35px] mt-5 cursor-pointer" : "text-white  flex items-center m-r-3 h-[35px] mt-5 cursor-pointer border-l-4 border-indigo-500"}>
-            <span className="inline-block px-4">
-              <img className="inline-block w-[25px]" src={Home}></img>
-            </span>
-            <span className="text-menu font-menu ">Customers</span>
-          </NavLink> 
-
-          <NavLink to="/" className="text-white border-l-4 border-indigo-500 border-[#FF7A42] flex items-center m-r-3 h-[35px] mt-5 cursor-pointer absolute bottom-[35px] w-[300px]">
-            <span className="inline-block px-4">
-              <img className="inline-block w-[25px]" src={Home}></img>
-            </span>
-            <span className="text-menu font-menu ">Help center</span>
-          </NavLink> */}
+        
           {menus.map(menu=><Menu title={menu.title} image={menu.image} link={menu.link}/>)}
 
           <div className="absolute bottom-[35px] w-full md:w-[300px]">
