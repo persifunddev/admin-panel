@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "poppins-regular";
+        font-weight: 600;
+        src: url(./assets/fonts/poppins/poppins-regular.woff2) format("woff2");
+    }
+}
+
+@layer components {
+    .menu{
+        /* @apply border-l-4 border-indigo-500 border-[#FF7A42] flex items-center m-r-3 h-[35px] cursor-pointer */
+    }
+}
